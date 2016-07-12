@@ -1,7 +1,15 @@
 # Modern JavaScript Developer Quiz
-# Robot Battledome
+# Robot Battledome / Quiz
 
-## Setup
+![Quiz screenshot](images/spaQuiz.jpg?raw=true "Quiz Screenshot")
+[Check it out on CODEPEN](http://codepen.io/IAmericanArtist/)
+
+<p align="center">
+  <img src="img/zzzzzzzz.gif?raw=true" alt="Growing Trees"/>
+</p>
+***
+
+<!-- ## Setup
 
 1. `cd` to your quizzes directory.
 1. Clone this repository and `cd` into the directory it creates.
@@ -17,7 +25,7 @@
 You are now ready to work in the `quiz` branch.
 
 When your work in complete, push up the branch (`git push origin quiz`) and submit the pull request on Github.
-
+ -->
 ## Instructions
 
 ### Code/Tools Requirements
@@ -31,10 +39,10 @@ When your work in complete, push up the branch (`git push origin quiz`) and subm
 
 You'll be building robots to battle each other.
 
-1. A base Robot function.
+<!-- 1. A base Robot function.
 1. Define three robot type functions (e.g. Drone, Bipedal, ATV).
-1. Define at least 2 specific robot model functions for each type.
-1. Give each robot model a different range of health. For example, one model can have health range of 50-80, and another one will have a range of 60-120. To accomplish this, read about the [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) function in JavaScript.
+1. Define at least 2 specific robot model functions for each type. -->
+<!-- 1. Give each robot model a different range of health. For example, one model can have health range of 50-80, and another one will have a range of 60-120. To accomplish this, read about the [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) function in JavaScript. --> 
 1. Give each robot model a different range of damage they do using the same technique.
 
 ### Base Functional Requirements
@@ -76,20 +84,4 @@ If you have completed the base requirements, and want to explore object composit
 1. When the battle is over display the outcome to the user. For example...
 
 ##### The Viper Drone defeated the Behemoth ATV with its flamethrower.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
