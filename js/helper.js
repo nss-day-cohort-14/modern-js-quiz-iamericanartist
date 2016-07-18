@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const rndNum = (big, little) => {
   let num1 = little || 0,             // assigns (little) to num1 OR "0" if empty/only one argument

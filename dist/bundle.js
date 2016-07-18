@@ -1,5 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-"use strict"
+"use strict";
 
 const rndNum = (big, little) => {
   let num1 = little || 0,             // assigns (little) to num1 OR "0" if empty/only one argument
@@ -17,15 +17,18 @@ const math = require('./math');
 // console.log("sum", math.add(5, 10));
 // console.log("$", $('<button/>'));
 
-const hf = require('./helper')  // to use = hf.rndNum
+
 const $ = require('jquery');
+const hf = require('./helper');  // to use = hf.rndNum
+const RobotsModule = require('./robots');  // to use = robots.robot
 
 
 
+var Bobbie = new RobotsModule();
 console.log("random",hf.rndNum(50));
+console.log("robots",Bobbie);
 
-
-},{"./helper":1,"./math":3,"jquery":4}],3:[function(require,module,exports){
+},{"./helper":1,"./math":3,"./robots":4,"jquery":5}],3:[function(require,module,exports){
 'use strict';
 
 function bar () {
@@ -38,6 +41,18 @@ function add (x, y) {
 
 module.exports = { add, bar };
 },{}],4:[function(require,module,exports){
+"use strict";
+
+const Helper = require('./helper');
+
+function Robot(){
+  this.heads = 2;
+  this.attack = Helper.rndNum(10, 5);  // default attack range - top of range first, bottom of range second
+  this.heath = Helper.rndNum(100, 50);  // default health range - top of range first, bottom of range second
+ }
+
+module.exports = Robot;
+},{"./helper":1}],5:[function(require,module,exports){
 /*eslint-disable no-unused-vars*/
 /*!
  * jQuery JavaScript Library v3.1.0

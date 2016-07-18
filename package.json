@@ -4,7 +4,7 @@
   "description": "",
   "main": "js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape js/spec/testSpec.js | tap-spec"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "jasmine-spec-reporter": "^2.5.0",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
+    "tape": "^4.6.0",
     "underscore": "^1.8.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",

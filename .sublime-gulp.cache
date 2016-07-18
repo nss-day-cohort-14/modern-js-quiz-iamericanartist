@@ -1,0 +1,1 @@
+{"/Users/EricD/workspace/quizzes/modern-js-quiz-iamericanartist/gulpfile.js":{"sha1":"c48a0c0d88781d05a6818ece7553b2109e5a9b5a","tasks":{"browserify":{"name":"browserify","dependencies":""},"lint":{"name":"lint","dependencies":""},"specs":{"name":"specs","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"lint specs watch"}}}}
