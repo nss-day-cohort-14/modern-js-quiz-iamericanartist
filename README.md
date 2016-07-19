@@ -1,11 +1,11 @@
 # Modern JavaScript Developer Quiz
 # Robot Battledome / Quiz
 
-![Quiz screenshot](images/spaQuiz.jpg?raw=true "Quiz Screenshot")
+![Quiz screenshot](images/mjdQuiz.jpg?raw=true "Quiz Screenshot")
 [Check it out on CODEPEN](http://codepen.io/IAmericanArtist/)
-
+# FIX THIS STUFF WHEN DONE
 <p align="center">
-  <img src="img/zzzzzzzz.gif?raw=true" alt="Growing Trees"/>
+  <img src="img/zzzzzzzz.gif?raw=true" alt="BattleDome"/>
 </p>
 ***
 
