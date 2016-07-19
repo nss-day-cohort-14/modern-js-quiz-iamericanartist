@@ -9,50 +9,36 @@ const rndNum = (big, little) => {
 
 module.exports = {rndNum};
 },{}],2:[function(require,module,exports){
-'use strict';
-
-const math = require('./math');
-// console.log("math", math);
-// console.log("add", math.add);
-// console.log("sum", math.add(5, 10));
-// console.log("$", $('<button/>'));
-
-
-const $ = require('jquery');
-const hf = require('./helper');  // to use = hf.rndNum
-const RobotsModule = require('./robots');  // to use = robots.robot
-
-
-
-var Bobbie = new RobotsModule();
-console.log("random",hf.rndNum(50));
-console.log("robots",Bobbie);
-
-},{"./helper":1,"./math":3,"./robots":4,"jquery":5}],3:[function(require,module,exports){
-'use strict';
-
-function bar () {
-
-}
-
-function add (x, y) {
-	return x + y;
-}
-
-module.exports = { add, bar };
-},{}],4:[function(require,module,exports){
 "use strict";
 
-const Helper = require('./helper');
+const $ = require("jquery");
+const hf = require("./helper");             // to use = hf.rndNum
+const RobotsModule = require("./robots");   // to use = robots.robot
 
-function Robot(){
-  this.heads = 2;
-  this.attack = Helper.rndNum(10, 5);  // default attack range - top of range first, bottom of range second
-  this.heath = Helper.rndNum(100, 50);  // default health range - top of range first, bottom of range second
- }
+var Bobbie = new RobotsModule();        //Hmmmmmmm....?
+console.log("random",hf.rndNum(-10,20));
+console.log("Bobbie is a ",Bobbie);
 
-module.exports = Robot;
-},{"./helper":1}],5:[function(require,module,exports){
+},{"./helper":1,"./robots":3,"jquery":4}],3:[function(require,module,exports){
+"use strict";
+
+const Helper = require("./helper");         // not needed here yet...
+
+////////////////////////// ROBOT //////////////////////////
+function Robot(type){                       // ROBOT INITIAL Constructor
+  this.type = type;                         // argument provided from TYPES.JS (WHICH IS 2ND ON PROTOTYPE CHAIN)
+  this.model = null;                        // entered as argument on MODELS.JS into TYPES.JS (WHICH IS 3RD ON PROTOTYPE CHAIN)
+  this.name = null;                         // entered as argument on MODELS.JS into TYPES.JS
+  this.currentHealth = null;                // will hold the running total of health
+  this.heath = Helper.rndNum(100, 50);      // entered as argument on MODELS.JS into TYPES.JS / default health range - top of range first, bottom of range second
+  this.attack = Helper.rndNum(10, 5);       // entered as argument on MODELS.JS into TYPES.JS / default attack range - top of range first, bottom of range second
+
+  this.heads = 2;                           // This is just to get testing going! :)
+}
+
+module.exports = Robot;                     // export Robot module
+
+},{"./helper":1}],4:[function(require,module,exports){
 /*eslint-disable no-unused-vars*/
 /*!
  * jQuery JavaScript Library v3.1.0
